@@ -34,9 +34,33 @@
   </header>
 
 
-  <section class="hero text-center my-4">
-    <img class="img-fluid" src="https://s3-alpha-sig.figma.com/img/dc40/ba89/7215f42e5883a64157f0aa3a4d1a866a?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ehBRHWQiMPeh1Qm5lowHf13haF5BlD-Fwp-saYPEIyuAFxaLsIS1qz2yqUklJrMQSQNM~6VmSywygicBsrB-E08Ybtmeztxwr6~D84pfv7mt26v09V2e6cGClzgC5uH8zyQyMnQofsErnmuqgxqxxdAdi9QHxxFFCjBOQwFWwQIg2ihuPJZqlLw~6rCLnBOsw7JBDr8w2r53wp3tyMP-UD~iaytnYZI5k-Yz6JQbcgNp-ad78-~BGuzyi6xfJYeT5ZjV~6zVq~rkd8YFcr~1mUPCabLTdni0VpZrWnCo0fI5t7C7s6co5uHQUwuGYPIHcgM91gyysE~AOAKKgOv8pw__" alt="Main Product Image">
-  </section>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://s3-alpha-sig.figma.com/img/dc40/ba89/7215f42e5883a64157f0aa3a4d1a866a?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ehBRHWQiMPeh1Qm5lowHf13haF5BlD-Fwp-saYPEIyuAFxaLsIS1qz2yqUklJrMQSQNM~6VmSywygicBsrB-E08Ybtmeztxwr6~D84pfv7mt26v09V2e6cGClzgC5uH8zyQyMnQofsErnmuqgxqxxdAdi9QHxxFFCjBOQwFWwQIg2ihuPJZqlLw~6rCLnBOsw7JBDr8w2r53wp3tyMP-UD~iaytnYZI5k-Yz6JQbcgNp-ad78-~BGuzyi6xfJYeT5ZjV~6zVq~rkd8YFcr~1mUPCabLTdni0VpZrWnCo0fI5t7C7s6co5uHQUwuGYPIHcgM91gyysE~AOAKKgOv8pw__" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-16-pro-202409_FMT_WHH?wid=618&hei=900&fmt=jpeg&qlt=90&.v=1743416008641" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone16prohero-202409_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1725567599334" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
   <section class="container text-center my-5">
     <h2>Shop Collection</h2>
@@ -63,7 +87,7 @@
       <div class="col-md-6">
         <img class="img-fluid" src="https://s3-alpha-sig.figma.com/img/f98c/9f77/2c9b3581a0a349af00d590d738c52494?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VNlmIhJyZdxkJwnboISdCwCq4ZFOrT~~ImlaQhU14zlLcMGIgOJL3SVoaMA6O7qPUluCdIawgAlo4~UiZwzitwloSiG3E2Xuet~zz0dWjo8ryzbFSpIl7p2QHiqv52rIPCPYI-U6UlCpsvA824Hqp698WpGnlmrzNBGqM33wHjUB2mZ4SNh3xBE2Yv0SXDX5jEelHWlQJsrOI5dDnU8gQfQD0ugpoePeicqVXbnvubDl8Z-ovvKkBRgF9TvICW3gI5SBh95DgkmOEgRc6-73QAtJpX0jeojcBfE0PMY90SMJoStbT9Ap9nuSuzc2sX5kqHMcCm~opU8oHz6Xp~lKEA__" alt="Promo">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 hurryup-item ">
         <h3>Hurry up! 40% OFF</h3>
         <p>Thousands of high-tech items are waiting for you</p>
         <div class="fs-4 fw-bold">02:12:45:05</div>
@@ -91,15 +115,16 @@
   <section class="container text-center my-5">
     <h2>Feedback Corner</h2>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 feedbackCorner-item">
         <p>"The customer experience was exceptional from start to finish. Would 100% recommend!"</p>
         <span>- Emily Wilson</span>
       </div>
-      <div class="col-md-4">
+
+      <div class="col-md-4 feedbackCorner-item">
         <p>"The quality and style of the products are unbeatable. Fast shipping too!"</p>
         <span>- Sarah Thompson</span>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 feedbackCorner-item">
         <p>"A great experience shopping on this website. Clear navigation and hassle-free checkout."</p>
         <span>- Olivia Martinez</span>
       </div>
@@ -154,14 +179,16 @@
         </div>
         <div class="col-md-4">
           <h5>Download App</h5>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Apple_logo_black.svg" alt="App Store" width="80">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Play_Store_badge_EN.svg" alt="Google Play" width="100">
+          <img src="/pngegg (1).png" alt="App Store" width="80">
+          <img src="/pngegg.png" alt="Google Play" width="100">
+          <img src="/Ekran görüntüsü 2025-04-19 124807.png" alt="qrcode" width="100">
         </div>
       </div>
       <div class="mt-3">&copy; 2025 E-commerce. All rights reserved.</div>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

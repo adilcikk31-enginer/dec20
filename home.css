@@ -5,6 +5,8 @@
 }
 
 
+
+
 h2 {
     font-weight: bold;
     margin-bottom: 1rem;
@@ -23,9 +25,31 @@ section .row p {
 
 button.btn {
     min-width: 120px;
-    transition: background-color 0.3s ;
+    transition: background-color 0.3s;
 }
 
 button.btn:hover {
     opacity: 0.9;
+}
+
+.feedbackCorner-item  {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 5px;
+    transition: 500ms;
+}
+
+.feedbackCorner-item:hover {
+    background-color: #E075757A;
+}
+
+.hurryup-item{
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #FFAB0066;
+}
+
+.hurryup-item:hover {
+    transform: scale(1.05);
 }
