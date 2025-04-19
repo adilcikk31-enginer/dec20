@@ -1,0 +1,19 @@
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+footer img {
+  margin: 5px;
+  
+}
+
+footer .container {
+  text-align: left;
+}
+
