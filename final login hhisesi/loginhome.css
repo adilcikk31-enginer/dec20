@@ -20,3 +20,8 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
+.promotion{
+  background-color: #DB4444;
+  padding: 10px;
+  color: white;
+}
