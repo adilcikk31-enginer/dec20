@@ -36,26 +36,36 @@
 
   <div class="container form-container">
     <h3 class="text-center mb-4">Create an account</h3>
-    <form>
+    <form class="was-validated">
       <div class="mb-3">
         <label class="form-label">Name</label>
-        <input type="text" class="form-control" placeholder="Enter your name">
+        <input type="text" class="form-control" placeholder="Enter your name" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
       </div>
       <div class="mb-3">
         <label class="form-label">Surname</label>
-        <input type="text" class="form-control" placeholder="Enter your surname">
+        <input type="text" class="form-control" placeholder="Enter your surname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
       </div>
       <div class="mb-3">
         <label class="form-label">Email</label>
-        <input type="email" class="form-control" placeholder="Enter your email">
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
       </div>
       <div class="mb-3">
         <label class="form-label">Username</label>
-        <input type="text" class="form-control" placeholder="Choose a username">
+        <input type="text" class="form-control" placeholder="Choose a username" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
       </div>
       <div class="mb-3">
         <label class="form-label">Password</label>
-        <input type="password" class="form-control" placeholder="Enter a password">
+        <input type="password" class="form-control" placeholder="Enter a password" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
       </div>
       <button type="submit" class="btn btn-danger w-100">Create account</button>
       <p class="text-center mt-2">Already have account? <a href="#" class="text-danger">Log in</a></p>
