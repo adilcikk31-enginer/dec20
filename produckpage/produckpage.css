@@ -1,0 +1,25 @@
+.top-banner {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  footer {
+    background-color: #e74c3c;
+    color: white;
+    padding: 40px 0;
+  }
+  .copyright {
+    background: #d62c1a;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .revisited-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
