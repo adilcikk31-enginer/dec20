@@ -1,0 +1,32 @@
+.top-banner {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .shop-sidebar h5, .shop-sidebar ul {
+    margin-top: 20px;
+  }
+  .product-card img {
+    height: 200px;
+    object-fit: contain;
+  }
+  footer {
+    background-color: #e74c3c;
+    color: white;
+    padding: 40px 0;
+  }
+  .copyright {
+    background: #d62c1a;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .product-img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+  
