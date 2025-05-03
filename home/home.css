@@ -142,3 +142,9 @@ button.btn:hover {
     height: 600px;
 
 }
+.products img{
+    height: 300px;
+
+    object-fit: cover;
+
+}
