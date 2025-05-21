@@ -1,25 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const loginForm = document.querySelector('.form-container form');
-    
-    if (loginForm) {
-        loginForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const username = document.querySelector('input[type="text"]').value;
-            const password = document.querySelector('input[type="password"]').value;
-          
-            if (!username || !password) {
-                alert('Zəhmət olmasa, bütün xanaları doldurun!');
-                return;
-            }
-            
+document.addEventListener("DOMContentLoaded", function () {
+  const loginForm = document.querySelector("#login-form");
 
-            localStorage.setItem('username', username);
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-            localStorage.setItem('userFullName', 'Adil Ceferli');
-            localStorage.setItem('userEmail', 'adilceferli40@gmail.com');
+      const formobject = new FormData(loginForm);
+      let data = {};
+      formobject.forEach((value, key) => {
+        data[key] = value;
+      });
+  console.log(data);
+      fetch("http://195.26.245.5:9505/api/auth", {
+        method: "POST",
+        body: JSON.stringify(data),
+      })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
 
-            window.location.href = '../account/account.html';
-        });
-    }
+ 
+
+   //   window.location.href = "../account/account.html";
+    });
+  }
 });
