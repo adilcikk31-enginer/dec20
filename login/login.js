@@ -10,17 +10,23 @@ document.addEventListener("DOMContentLoaded", function () {
       formobject.forEach((value, key) => {
         data[key] = value;
       });
-  console.log(data);
       fetch("http://195.26.245.5:9505/api/auth", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(data),
       })
-      .then((response) => response.json())
-      .then((data) => console.log(data));
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.body) {
+            localStorage.setItem("user", JSON.stringify(data.body));
+            window.location.href = "../account/account.html";
+          } else {
+            showMessage("Invalid email or password!", "danger");
+          }
+        });
 
- 
-
-   //   window.location.href = "../account/account.html";
     });
   }
 });

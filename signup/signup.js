@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(newUser);
 
     addUser(newUser);
-    signup.reset();
+    // signup.reset();
 
     function showMessage(message, type) {
       messageBox.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
@@ -35,7 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(user),
-      }).catch((error) => {
+      }).then((response) => {
+        return response.json();
+      }).then((data) => {
+        console.log(data);
+        showMessage("User created successfully!", "success");
+      })
+      .catch((error) => {
         if (error.status == 403) {
           showMessage(
             "User with this email or username already exists!",
@@ -44,6 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     }
-    window.location.href = "../account/account.html";
+    // window.location.href = "../account/account.html";
   });
 });
