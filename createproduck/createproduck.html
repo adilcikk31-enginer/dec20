@@ -45,29 +45,26 @@
   </header>
 
     <body>
-        <div class="container">
+        <div class="container" id="create-product">
             <div class="form-container">
                 <h2 class="text-center mb-4">Create Product</h2>
                 <form>
                     <div class="mb-3">
                         <label for="brand" class="form-label">Brand</label>
-                        <input type="text" class="form-control" id="brand" placeholder="Enter brand name" required>
+                        <input type="text" class="form-control" id="brand" placeholder="Enter brand name" name="brand" required>
                     </div>
                     <div class="mb-3">
                         <label for="model" class="form-label">Model</label>
-                        <input type="text" class="form-control" id="model" placeholder="Enter model name" required>
+                        <input type="text" class="form-control" id="model" placeholder="Enter model name" name="model" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="category" class="form-label">Category</label>
-                        <input type="text" class="form-control" id="category" placeholder="Enter category" required>
-                    </div>
+                
                     <div class="mb-3">
                         <label for="description" class="form-label">description</label>
-                        <input type="text" class="form-control" id="brand" placeholder="Enter description" required>
+                        <input type="text" class="form-control" id="brand" placeholder="Enter description" name="description" required>
                     </div>
                     <div class="mb-3">
                         <label for="price" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="price" placeholder="Enter price" required>
+                        <input type="number" class="form-control" id="price" placeholder="Enter price" name="price" required>
                     </div>
                     <div class="mb-3">
                         <label for="rating" class="form-label">Rating</label>
@@ -76,7 +73,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="imageUrl" class="form-label">Image URL</label>
-                        <input type="url" class="form-control" id="imageUrl" placeholder="Enter image URL" required>
+                        <input type="url" class="form-control" id="imageUrl" placeholder="Enter image URL" name="imageUrl" required>
                     </div>
                     <div class="text-center">
                         <img id="previewImage" src="#" alt="Preview" class="d-none">
@@ -162,6 +159,8 @@
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/1e8a121b1f.js" crossorigin="anonymous"></script>
 <script src="../header.js"></script>
+<script src="../createproduck/createproduck.js"></script>
+
 </body>
 
 </html>
