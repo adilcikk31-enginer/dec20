@@ -5,10 +5,6 @@ body {
   color: #111;
 }
 
-.header {
-  padding: 2rem;
-  border-bottom: 1px solid #ccc;
-}
 
 .badge {
   background: red;
@@ -134,7 +130,6 @@ h2 {
 
 .macbook-product button {
     height: 50px;
-
     border-color: #464444;
 }
 

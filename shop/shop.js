@@ -10,7 +10,7 @@ async function fetchProducts() {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${user?.token}`,
+        "Authorization": `Bearer ${user?.token}`,
       },
     });
 
@@ -35,7 +35,7 @@ async function fetchCategories() {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${user?.token}`,
+        "Authorization": `Bearer ${user?.token}`,
       },
     });
 

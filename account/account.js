@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${user?.token}`,
+        "Authorization": `Bearer ${user?.token}`,
       },
     })
       .then((response) => {
